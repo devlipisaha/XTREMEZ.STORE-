@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Xtremez — AVEIRO - CHANGE ZERO Sustainable Gratitude Gift Set</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet"/>
+
+<style>
+/* ====================================================
+   CLIENT'S EXACT COLOR PALETTE (from Screenshot_59.jpg)
+   Primary: #FF6B6B (coral red) | Secondary: #34485E (navy) 
+   Accent: #22EC71 (green) | BG: #E8E8E8 (light gray)
+   ==================================================== */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'DM Sans', sans-serif;   /* CHANGED: was system font */
+  background: #E8E8E8;                   /* CLIENT COLOR: Main page background */
+  color: #34485E;                        /* CLIENT COLOR: Primary text */
+  font-size: 14px;
+  line-height: 1.6;                      /* CHANGED: was 1.4, slight readability tweak */
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; color: inherit; transition: color .18s; }
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+
+/* ====================================================
+   ANNOUNCEMENT / TOP TICKER STRIP
+   (original has a white strip with text)
+   ==================================================== */
+.top-strip {
+  background: #34485E;          /* CLIENT COLOR: Secondary/UI background */
+  color: rgba(255,255,255,0.85);/* White text on dark */
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  padding: 7px 16px;
+  letter-spacing: 0.02em;
+}
+.top-strip strong {
+  color: #22EC71;               /* CLIENT COLOR: Accent green */
+  font-weight: 600;
+}
+
+/* ====================================================
+   UTIL BAR (Wishlist | My Account)
+   ==================================================== */
+.util-bar {
+  background: #ffffff;          /* White util bar */
+  border-bottom: 1px solid #D0D0D0;
+  padding: 5px 0;
+}
+.util-bar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.util-bar-inner a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #7A7A7A;               /* Light gray text */
+}
+.util-bar-inner a:hover { color: #FF6B6B; } /* CLIENT COLOR: Primary coral on hover */
+
+/* ====================================================
+   HEADER / MAIN NAV
+   (original: white header, dark nav links, logo left)
+   ==================================================== */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #E2E8F0;
+}
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+.header-logo img {
+  height: 44px;
+  width: auto;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-cart {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #FF6B6B;             /* CLIENT COLOR: Primary coral */
+  padding: 9px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.03em;
+}
+.header-cart:hover { background: #E85555; color: #fff; } /* Darker coral on hover */
+.header-signin {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #34485E;                  /* CLIENT COLOR: Secondary text */
+  border: 1px solid #34485E;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+.header-signin:hover { background: #F5F5F5; }
+
+/* ====================================================
+   MAIN NAVIGATION BAR
+   (original: dark background, white text nav)
+   ==================================================== */
+.main-nav {
+  background: #34485E;          /* CLIENT COLOR: Secondary/UI background */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.main-nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+.nav-menu > li { position: relative; }
+.nav-menu > li > a {
+  font-family: 'Outfit', sans-serif; /* CHANGED: was system font */
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;            /* CHANGED: added tracking */
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);    /* CHANGED: was plain white */
+  display: block;
+  padding: 14px 13px;
+  transition: color .18s, background .18s;
+}
+.nav-menu > li > a:hover {
+  color: #ffffff;
+  background: rgba(255,255,255,0.07);
+}
+
+/* Dropdown */
+.nav-menu > li:hover .nav-dropdown { display: block; }
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  background: #2A3A4E;            /* Darker shade of client secondary */
+  border: 1px solid rgba(34,236,113,0.15);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+  z-index: 1000;
+  padding: 6px 0;
+}
+.nav-dropdown a {
+  font-family: 'DM Sans', sans-serif; /* CHANGED */
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(203,213,225,0.9);     /* CHANGED */
+  display: block;
+  padding: 8px 16px;
+  transition: background .15s, color .15s;
+}
+.nav-dropdown a:hover {
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+}
+/* Sub-sub dropdown */
+.nav-dropdown li { position: relative; }
+.nav-dropdown li:hover .nav-subdropdown { display: block; }
+.nav-subdropdown {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  min-width: 160px;
+  background: #2A3A4E;
+  border: 1px solid rgba(34,236,113,0.15);
+  border-radius: 0 8px 8px 8px;
+  padding: 6px 0;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+.nav-subdropdown a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: rgba(203,213,225,0.9);
+  display: block;
+  padding: 8px 16px;
+}
+.nav-subdropdown a:hover { background: rgba(255,255,255,0.07); color: #fff; }
+.nav-contact {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.75);
+  padding: 14px 13px;
+  display: block;
+}
+.nav-contact:hover { color: #fff; }
+
+/* ====================================================
+   SECONDARY / CATEGORY STRIP
+   (original: below header, simple link strip)
+   ==================================================== */
+.cat-strip {
+  background: #ffffff;
+  border-bottom: 2px solid #E2E8F0;
+}
+.cat-strip-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.cat-strip-inner a {
+  font-family: 'DM Sans', sans-serif; /* CHANGED */
+  font-size: 13px;
+  font-weight: 400;
+  color: #475569;                     /* CHANGED */
+  padding: 10px 14px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color .18s, border-color .18s;
+  white-space: nowrap;
+}
+.cat-strip-inner a:hover,
+.cat-strip-inner a.active {
+  color: #FF6B6B;               /* CLIENT COLOR: Primary coral */
+  border-bottom-color: #FF6B6B;
+  font-weight: 500;
+}
+
+/* ====================================================
+   HERO / BANNER
+   (original: full-width image banner with text overlay)
+   ==================================================== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  background: #34485E;            /* CLIENT COLOR: Secondary background */
+  overflow: hidden;
+}
+.hero-section img.hero-img {
+  width: 100%;
+  display: block;
+  min-height: 400px;
+  object-fit: cover;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(52,72,94,0.8) 0%, rgba(52,72,94,0.3) 60%, transparent 100%);
+}
+.hero-text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+  max-width: 500px;
+}
+.hero-title {
+  font-family: 'Outfit', sans-serif; /* CHANGED */
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.hero-buy-btn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #FF6B6B;             /* CLIENT COLOR: Primary coral */
+  padding: 12px 28px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background .2s, transform .15s;
+  box-shadow: 0 4px 16px rgba(255,107,107,0.4);
+}
+.hero-buy-btn:hover { background: #E85555; transform: translateY(-1px); color: #fff; }
+
+/* ====================================================
+   SECTION HEADINGS
+   ==================================================== */
+.section-heading-wrap {
+  text-align: center;
+  padding: 48px 24px 28px;
+}
+.section-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #34485E;                   /* CLIENT COLOR: Primary text */
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+.section-subtext {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #64748B;                   /* CHANGED */
+  line-height: 1.65;                /* CHANGED: readability tweak */
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* ====================================================
+   CATEGORY CARDS GRID
+   (original: 5 cards, image on top, title + "Shop Now" below)
+   ==================================================== */
+.cat-grid-section {
+  background: #ffffff;
+  padding: 0 0 48px;
+}
+.cat-grid-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+.cat-card {
+  border: 1px solid #E2E8F0;      /* CHANGED: was generic border */
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  text-decoration: none;
+  transition: border-color .2s, box-shadow .2s;
+  display: block;
+}
+.cat-card:hover {
+  border-color: #FF6B6B;          /* CLIENT COLOR: Primary coral */
+  box-shadow: 0 4px 18px rgba(255,107,107,0.15);
+}
+.cat-card-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background: #EFF4FF;
+}
+.cat-card-body {
+  padding: 12px 14px 14px;
+}
+.cat-card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #34485E;                   /* CLIENT COLOR: Primary text */
+  margin-bottom: 6px;
+}
+.cat-card-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #FF6B6B;                   /* CLIENT COLOR: Primary coral */
+  letter-spacing: 0.02em;
+}
+
+/* ====================================================
+   PRODUCT CARDS GRID
+   (original: 3 columns, image / title / price)
+   ==================================================== */
+.products-section {
+  background: #E8E8E8;             /* CLIENT COLOR: Main page background */
+  padding: 40px 0 48px;
+}
+.products-section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.product-card {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;      /* CHANGED: was generic */
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow .2s, border-color .2s;
+}
+.product-card:hover {
+  box-shadow: 0 8px 28px rgba(52,72,94,0.12);
+  border-color: rgba(255,107,107,0.3);
+}
+.product-card-img-wrap {
+  background: #EFF4FF;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.product-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+}
+.product-card-body {
+  padding: 14px 16px 18px;
+}
+.product-card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #34485E;                   /* CLIENT COLOR: Primary text */
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+.product-card-price {
+  font-family: 'Outfit', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #34485E;                   /* CLIENT COLOR: Primary text */
+}
+
+/* ====================================================
+   FEATURED / ECO SECTION
+   (original: "Eco Collection" heading + "Sustainable Products"
+    with globe icon and image — two-column layout)
+   ==================================================== */
+.eco-section {
+  background: #ffffff;
+  padding: 48px 0;
+}
+.eco-section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.eco-text-col {
+  flex: 1;
+}
+.eco-tag {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #22EC71;                   /* CLIENT COLOR: Accent green */
+  margin-bottom: 12px;
+}
+.eco-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #34485E;                   /* CLIENT COLOR: Primary text */
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.eco-shop-btn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #22EC71;             /* CLIENT COLOR: Accent green */
+  padding: 11px 24px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background .2s;
+}
+.eco-shop-btn:hover { background: #1DD863; color: #fff; }
+.eco-img-col {
+  flex: 1;
+}
+.eco-img-col img { width: 100%; border-radius: 8px; }
+
+/* ====================================================
+   OUR BRANDS
+   (original: brand logo strip)
+   ==================================================== */
+.brands-section {
+  background: #E8E8E8;             /* CLIENT COLOR: Main page background */
+  padding: 40px 0;
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+}
+.brands-section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.brands-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #94A3B8;                   /* CHANGED */
+  text-align: center;
+  margin-bottom: 24px;
+}
+.brands-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.brands-row img {
+  height: 40px;
+  width: auto;
+  opacity: 0.6;
+  filter: grayscale(1);
+  transition: opacity .2s, filter .2s;
+}
+.brands-row img:hover { opacity: 1; filter: grayscale(0); }
+
+/* ====================================================
+   COLLECTION BANNERS (video + brochure)
+   (original: two images side by side with text overlay)
+   ==================================================== */
+.collection-section {
+  background: #ffffff;
+  padding: 48px 0;
+}
+.collection-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.collection-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.collection-card img { width: 100%; display: block; }
+.collection-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(52,72,94,0.65);  /* CLIENT COLOR: Secondary with opacity */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 24px;
+}
+.collection-card-title {
+  font-family: 'Outfit', sans-serif; /* CHANGED */
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.collection-card-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);    /* CHANGED */
+  margin-bottom: 16px;
+}
+.collection-btn {
+  font-family: 'Outfit', sans-serif; /* CHANGED */
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #0F1E45;
+  background: #ffffff;
+  padding: 9px 20px;
+  border-radius: 5px;
+  transition: background .2s;
+}
+.collection-btn:hover { background: #22EC71; } /* CLIENT COLOR: Accent green */
+
+/* ====================================================
+   TRUST / FEATURE STRIP
+   (original: 4 icons in a row — delivery, payments, returns, support)
+   ==================================================== */
+.trust-strip {
+  background: #ffffff;
+  border-top: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 28px 0;
+}
+.trust-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  text-align: center;
+}
+.trust-item-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #34485E;                   /* CLIENT COLOR: Primary text */
+  margin-bottom: 3px;
+}
+.trust-item-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12.5px;
+  color: #64748B;                   /* CHANGED */
+}
+
+/* ====================================================
+   NEWSLETTER
+   (original: "Get in touch" / newsletter signup section)
+   ==================================================== */
+.newsletter-section {
+  background: #E8E8E8;             /* CLIENT COLOR: Main page background */
+  padding: 48px 0;
+  text-align: center;
+}
+.newsletter-heading {
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #34485E;                   /* CLIENT COLOR: Primary text */
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.newsletter-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  color: #64748B;
+  margin-bottom: 24px;
+}
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.newsletter-input {
+  flex: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13.5px;
+  color: #1E293B;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 10px 14px;
+  outline: none;
+  background: #fff;
+}
+.newsletter-input:focus { border-color: #FF6B6B; } /* CLIENT COLOR: Primary */
+.newsletter-btn {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: #FF6B6B;             /* CLIENT COLOR: Primary coral */
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background .2s;
+}
+.newsletter-btn:hover { background: #E85555; }
+
+/* ====================================================
+   FOOTER
+   (original: dark footer, 4-column layout)
+   ==================================================== */
+.site-footer {
+  background: #34485E;             /* CLIENT COLOR: Secondary/UI background */
+  padding: 52px 0 0;
+}
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.4fr;
+  gap: 40px;
+}
+.footer-brand-col {}
+.footer-logo { height: 38px; margin-bottom: 14px; }
+.footer-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.65;
+  max-width: 220px;
+}
+.footer-col-heading {
+  font-family: 'Outfit', sans-serif; /* CHANGED */
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-links-list a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  transition: color .18s;
+}
+.footer-links-list a:hover { color: #22EC71; } /* CLIENT COLOR: Accent green */
+.footer-contact-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 8px;
+  line-height: 1.55;
+}
+.footer-contact-text a {
+  color: rgba(255,255,255,0.65);
+  transition: color .18s;
+}
+.footer-contact-text a:hover { color: #22EC71; } /* CLIENT COLOR: Accent green */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin-top: 44px;
+  padding: 18px 24px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.footer-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+}
+.footer-copy a { color: rgba(255,255,255,0.35); }
+.footer-copy a:hover { color: #22EC71; } /* CLIENT COLOR: Accent green */
+.footer-payments {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-payments img { height: 24px; opacity: 0.7; }
+
+/* ====================================================
+   WHATSAPP BUTTON (original fixed bubble)
+   ==================================================== */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25D366;             /* WhatsApp official green */
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.5);
+  z-index: 999;
+  transition: transform .2s, box-shadow .2s;
+}
+.whatsapp-btn:hover { 
+  transform: translateY(-2px); 
+  box-shadow: 0 8px 24px rgba(37,211,102,0.6); 
+  color: #fff; 
+}
+.whatsapp-btn svg {
+  fill: #fff;
+  flex-shrink: 0;
+}
+
+/* ====================================================
+   ANNOTATION BANNER (TOP) — so client can see it's a mockup
+   ==================================================== */
+.mockup-note {
+  background: #34485E;             /* CLIENT COLOR */
+  border-bottom: 3px solid #FF6B6B; /* CLIENT COLOR */
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.mockup-note-left {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #FF6B6B;                   /* CLIENT COLOR */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pulse-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #22EC71;              /* CLIENT COLOR: Accent */
+  display: inline-block;
+  animation: pd 1.8s infinite;
+}
+@keyframes pd { 0%,100%{opacity:1}50%{opacity:.25} }
+.mockup-note-right {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.4);
+}
+.mn-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+.mn-tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  color: #93c5fd;
+  background: rgba(37,99,235,0.15);
+  border: 1px solid rgba(37,99,235,0.3);
+  padding: 1px 8px;
+  border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════
+     MOCKUP ANNOTATION (remove before sending to dev)
+════════════════════════════════════════ -->
+<div class="mockup-note">
+  <div>
+    <div class="mockup-note-left">
+      <span class="pulse-dot"></span>
+      XTREMEZ.STORE — Color &amp; Font Mockup &nbsp;·&nbsp; Same layout. Only colors + fonts changed.
+    </div>
+    <div class="mn-tags">
+      <span class="mn-tag">Font: Outfit (headings, nav, buttons)</span>
+      <span class="mn-tag">Font: DM Sans (body, descriptions)</span>
+      <span class="mn-tag">Primary: #FF6B6B (Coral)</span>
+      <span class="mn-tag">Secondary: #34485E (Navy)</span>
+      <span class="mn-tag">Accent: #22EC71 (Green)</span>
+      <span class="mn-tag">BG: #E8E8E8</span>
+      <span class="mn-tag">Logo: Unchanged ✓</span>
+      <span class="mn-tag">Structure: Unchanged ✓</span>
+    </div>
+  </div>
+  <div class="mockup-note-right">Deliver with xtremez-design-brief.docx</div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     TOP STRIP (original: announcement bar)
+════════════════════════════════════════ -->
+<div class="top-strip">
+  Ready Stocks in <strong>UAE, Saudi Arabia, Qatar, South Africa and India</strong> &nbsp;|&nbsp; Aspirational Brands &amp; Genuine Sustainable Products
+</div>
+
+
+<!-- ══════════════════════════════════════
+     UTILITY BAR (Wishlist | My Account)
+════════════════════════════════════════ -->
+<div class="util-bar">
+  <div class="util-bar-inner">
+    <a href="#">Wishlist</a>
+    <span style="color:#CBD5E1;">|</span>
+    <a href="#">My Account</a>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     SITE HEADER (Logo + Cart + Sign In)
+════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <!-- REAL LOGO — untouched -->
+    <a href="#" class="header-logo">
+      <img
+        src="https://xtremez.store/storage/settings/4ib9VmIqiecCECujvS2YjSazAISCOiNwb9xeNyTI.png"
+        alt="Xtremez"
+        onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<span style=\'font-family:Outfit,sans-serif;font-size:22px;font-weight:800;color:#0F1E45;letter-spacing:-.03em;\'>XTREME<span style=\'color:#2563EB;\'>Z</span></span>')"/>
+    </a>
+    <div class="header-right">
+      <a href="#" class="header-signin">SIGN IN</a>
+      <a href="#" class="header-cart">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        0 &nbsp;MY CART
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════
+     MAIN NAVIGATION (dark bar, all 7 menus)
+════════════════════════════════════════ -->
+<nav class="main-nav">
+  <div class="main-nav-inner">
+    <ul class="nav-menu">
+      <li>
+        <a href="#">SUSTAINABLE</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Apparel</a></li>
+          <li><a href="#">Drinkware</a></li>
+          <li><a href="#">Bags &amp; Travel</a></li>
+          <li><a href="#">Home &amp; Lifestyle</a></li>
+          <li><a href="#">Awards &amp; Trophies</a></li>
+          <li><a href="#">Gift Sets</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">APPAREL</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">Polo Shirts</a></li>
+          <li><a href="#">Hoodies &amp; Sweatshirts</a></li>
+          <li><a href="#">Roundneck T-shirts</a></li>
+          <li><a href="#">Towels</a></li>
+          <li><a href="#">Caps &amp; Headwear</a></li>
+          <li><a href="#">Formal Shirts</a></li>
+          <li><a href="#">Jackets</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">TECH</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">Powerbanks</a></li>
+          <li><a href="#">Car Chargers</a></li>
+          <li><a href="#">Multi-Cables</a></li>
+          <li><a href="#">Wireless Chargers</a></li>
+          <li>
+            <a href="#">Audio ▸</a>
+            <ul class="nav-subdropdown">
+              <li><a href="#">Speakers</a></li>
+              <li><a href="#">Earbuds</a></li>
+              <li><a href="#">Headphones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">DRINKWARE</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">Water Bottles</a></li>
+          <li><a href="#">Mugs &amp; Tumblers</a></li>
+          <li><a href="#">Tea &amp; Coffee Cups</a></li>
+          <li><a href="#">Glass Drinkware</a></li>
+          <li><a href="#">Cutlery</a></li>
+          <li><a href="#">Coasters</a></li>
+          <li><a href="#">Lunch Boxes</a></li>
+          <li><a href="#">Thermos Flasks</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">BAGS</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">Backpacks</a></li>
+          <li><a href="#">Laptop Bags &amp; Briefcases</a></li>
+          <li><a href="#">Laptop Sleeves</a></li>
+          <li><a href="#">Crossbody &amp; Messenger Bags</a></li>
+          <li><a href="#">Wash Bags &amp; Pouches</a></li>
+          <li><a href="#">Travel Accessories</a></li>
+          <li><a href="#">Cardholders &amp; Wallets</a></li>
+          <li><a href="#">Shopping &amp; Tote Bags</a></li>
+          <li><a href="#">Drawstring Bags</a></li>
+          <li><a href="#">Lunch &amp; Cooler Bags</a></li>
+          <li><a href="#">School Bags</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">OFFICE</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">Desk Items &amp; Stationery</a></li>
+          <li><a href="#">Portfolios &amp; Organizers</a></li>
+          <li><a href="#">Notebooks &amp; Diaries</a></li>
+          <li><a href="#">Pen Gift Sets</a></li>
+          <li><a href="#">Metal Pens</a></li>
+          <li><a href="#">Plastic Pens</a></li>
+          <li><a href="#">Pencils &amp; Crayons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">OTHERS</a>
+        <ul class="nav-dropdown">
+          <li><a href="#">Awards &amp; Trophies</a></li>
+          <li>
+            <a href="#">Home &amp; Living ▸</a>
+            <ul class="nav-subdropdown">
+              <li><a href="#">Interior &amp; Wellness</a></li>
+              <li><a href="#">Kitchenware</a></li>
+              <li><a href="#">Games &amp; Soft Toys</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Fight COVID Range</a></li>
+          <li><a href="#">Car &amp; Auto</a></li>
+          <li>
+            <a href="#">Outdoor &amp; Recreation ▸</a>
+            <ul class="nav-subdropdown">
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Sunglasses</a></li>
+              <li><a href="#">Golf Gifts</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Umbrellas</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a href="#" class="nav-contact">Contact Us</a>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     CATEGORY STRIP (Home / Drinkware / etc.)
+════════════════════════════════════════ -->
+<div class="cat-strip">
+  <div class="cat-strip-inner">
+    <a href="#" class="active">Home</a>
+    <a href="#">Drinkware</a>
+    <a href="#">Apparel &amp; Clothing</a>
+    <a href="#">Bags &amp; Travel</a>
+    <a href="#">Awards &amp; Trophies</a>
+    <a href="#">Gift Sets</a>
+    <a href="#">Other</a>
+    <a href="#" style="margin-left:auto;">Sign In</a>
+    <a href="#">Contact Us</a>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     HERO BANNER (full-width image + text)
+════════════════════════════════════════ -->
+<section class="hero-section">
+  <img class="hero-img"
+       src="https://xtremez.store/storage/banners/aLA9x6WKfpoXb1lK2vTdrzeU1Az0fx1p7V0j4gn2.png"
+       alt="AVEIRO Sustainable Gift Set"
+       onerror="this.style.minHeight='420px';this.style.background='linear-gradient(135deg,#0F1E45,#1A3A8F)';this.removeAttribute('src');"/>
+  <div class="hero-overlay"></div>
+  <div class="hero-text-wrap">
+    <h1 class="hero-title">AVEIRO - CHANGE ZERO Sustainable Gratitude Gift Set</h1>
+    <a href="#" class="hero-buy-btn">Buy Now</a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     BROWSE BY CATEGORY
+════════════════════════════════════════ -->
+<div class="section-heading-wrap">
+  <h2 class="section-heading">Browse by Category</h2>
+  <p class="section-subtext">Explore our store the easy way: shop by category and enjoy a seamless, organized shopping experience.</p>
+</div>
+
+<section class="cat-grid-section">
+  <div class="cat-grid-wrap">
+    <a href="#" class="cat-card">
+      <img class="cat-card-img"
+           src="https://xtremez.store/storage/categories/agDpYs8IBR4PXVYvEn1ihfEQB7nyDEZHeDVkQXyw.png"
+           alt="Drinkware"
+           onerror="this.style.background='#EFF4FF';this.style.minHeight='140px';this.removeAttribute('src');"/>
+      <div class="cat-card-body">
+        <div class="cat-card-title">Drinkware</div>
+        <div class="cat-card-link">Shop Now →</div>
+      </div>
+    </a>
+    <a href="#" class="cat-card">
+      <img class="cat-card-img"
+           src="https://xtremez.store/storage/categories/AKXHY9CUkvZ3wCxGXeS9RcGZvrBXuS7hREjWFBvF.png"
+           alt="Apparel & Clothing"
+           onerror="this.style.background='#EFF4FF';this.style.minHeight='140px';this.removeAttribute('src');"/>
+      <div class="cat-card-body">
+        <div class="cat-card-title">Apparel &amp; Clothing</div>
+        <div class="cat-card-link">Shop Now →</div>
+      </div>
+    </a>
+    <a href="#" class="cat-card">
+      <img class="cat-card-img"
+           src="https://xtremez.store/storage/categories/WEnALB4ZljjwfroQhLUi6QLeT0ibCo8YA1TK1Dt3.png"
+           alt="Bags & Travel"
+           onerror="this.style.background='#EFF4FF';this.style.minHeight='140px';this.removeAttribute('src');"/>
+      <div class="cat-card-body">
+        <div class="cat-card-title">Bags &amp; Travel</div>
+        <div class="cat-card-link">Shop Now →</div>
+      </div>
+    </a>
+    <a href="#" class="cat-card">
+      <img class="cat-card-img"
+           src="https://xtremez.store/storage/categories/6Jsl53f99fbSbbZK47vf1AJdpStmNaA98Icnz2Mg.png"
+           alt="Office & Writing"
+           onerror="this.style.background='#EFF4FF';this.style.minHeight='140px';this.removeAttribute('src');"/>
+      <div class="cat-card-body">
+        <div class="cat-card-title">Office &amp; Writing</div>
+        <div class="cat-card-link">Shop Now →</div>
+      </div>
+    </a>
+    <a href="#" class="cat-card">
+      <img class="cat-card-img"
+           src="https://xtremez.store/storage/categories/99LLQVQDmR76xMBcVo6FmVPEC5RHV1GeyJxEqNpx.png"
+           alt="Gift Sets"
+           onerror="this.style.background='#EFF4FF';this.style.minHeight='140px';this.removeAttribute('src');"/>
+      <div class="cat-card-body">
+        <div class="cat-card-title">Gift Sets</div>
+        <div class="cat-card-link">Shop Now →</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     NEW ARRIVALS (product grid)
+════════════════════════════════════════ -->
+<section class="products-section">
+  <div class="products-section-inner">
+    <div style="padding: 0 0 24px;">
+      <h2 class="section-heading" style="text-align:left;">New Arrivals</h2>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-card-img-wrap">
+          <img src="https://www.jasani.ae/web/image/product.product/11992/image_1024?unique=e7899bb"
+               alt="SARGAN Vacuum Flask"
+               onerror="this.style.display='none';this.parentElement.style.background='#EFF4FF';"/>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">SARGAN - Vacuum Flask with Temperature Lid and Notebook Gift Set - Black</div>
+          <div class="product-card-price">ê 43.18</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img-wrap">
+          <img src="https://www.jasani.ae/web/image/product.product/22127/image_1024?unique=867c1d5"
+               alt="AVEIRO Gift Set"
+               onerror="this.style.display='none';this.parentElement.style.background='#EFF4FF';"/>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">AVEIRO - CHANGE ZERO Sustainable 5pc Gratitude Gift Set - Navy Blue</div>
+          <div class="product-card-price">ê 128.52</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img-wrap">
+          <img src="https://www.jasani.ae/web/image/product.product/22127/image_1024?unique=867c1d5"
+               alt="AVEIRO Gift Set"
+               onerror="this.style.display='none';this.parentElement.style.background='#EFF4FF';"/>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">AVEIRO - CHANGE ZERO Sustainable 5pc Gratitude Gift Set - Navy Blue</div>
+          <div class="product-card-price">ê 128.52</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ECO / SUSTAINABLE SECTION
+     ("Featured Products / Eco Collection / Sustainable Products")
+════════════════════════════════════════ -->
+<section class="eco-section">
+  <div class="eco-section-inner">
+    <div class="eco-text-col">
+      <div class="eco-tag">Eco Collection</div>
+      <h2 class="eco-heading">Sustainable Products</h2>
+      <a href="#" class="eco-shop-btn">Shop Now</a>
+    </div>
+    <div class="eco-img-col">
+      <img src="https://xtremez.store/assets/images/sustainable-products.png"
+           alt="Sustainable Products"
+           onerror="this.style.display='none';this.parentElement.style.background='#EFF4FF';this.parentElement.style.minHeight='220px';this.parentElement.style.borderRadius='8px';"/>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     OUR BRANDS
+════════════════════════════════════════ -->
+<section class="brands-section">
+  <div class="brands-section-inner">
+    <div class="brands-heading">Our Brands</div>
+    <div class="brands-row">
+      <img src="https://xtremez.store/storage/brands/L1flhTORuJPJT1SKPkKDmdsAdiyVuImrBzseSe68.png"
+           alt="Giftology"
+           onerror="this.style.display='none'"/>
+      <img src="https://xtremez.store/storage/brands/L1flhTORuJPJT1SKPkKDmdsAdiyVuImrBzseSe68.png"
+           alt="Giftology"
+           onerror="this.style.display='none'"/>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     COLLECTION / VIDEO + BROCHURE BANNERS
+════════════════════════════════════════ -->
+<section class="collection-section">
+  <div class="collection-inner">
+    <div class="collection-card">
+      <img src="https://xtremez.store/assets/images/video-image.jpg"
+           alt="Video"
+           onerror="this.style.minHeight='280px';this.style.background='linear-gradient(135deg,#0F1E45,#1A3A8F)';this.removeAttribute('src');"/>
+      <div class="collection-card-overlay">
+        <div class="collection-card-title">A wide collection of creatives</div>
+      </div>
+    </div>
+    <div class="collection-card">
+      <img src="https://xtremez.store/assets/images/corporate-gifts-giftana.png"
+           alt="Brochure"
+           onerror="this.style.minHeight='280px';this.style.background='linear-gradient(135deg,#1A3A8F,#0F1E45)';this.removeAttribute('src');"/>
+      <div class="collection-card-overlay">
+        <div class="collection-card-title">Our 2026 Gifts Collection</div>
+        <div class="collection-card-sub">A wide collection of creatives</div>
+        <a href="#" class="collection-btn">View Brochure</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     NEWSLETTER / GET IN TOUCH
+════════════════════════════════════════ -->
+<section class="newsletter-section">
+  <div class="newsletter-heading">Get in touch with us</div>
+  <div class="newsletter-sub">Our Newsletter</div>
+  <div class="newsletter-form">
+    <input class="newsletter-input" type="email" placeholder="Your email address"/>
+    <button class="newsletter-btn">Subscribe</button>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     TRUST STRIP (4 features)
+════════════════════════════════════════ -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div>
+      <div class="trust-item-title">Easy Free Delivery</div>
+      <div class="trust-item-sub">Orders Above 100 AED</div>
+    </div>
+    <div>
+      <div class="trust-item-title">Secure Payments</div>
+      <div class="trust-item-sub">Trusted payment options.</div>
+    </div>
+    <div>
+      <div class="trust-item-title">Easy Returns</div>
+      <div class="trust-item-sub">Fast and easy returns</div>
+    </div>
+    <div>
+      <div class="trust-item-title">Customer Support</div>
+      <div class="trust-item-sub">Expert Assistance</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <!-- Brand col -->
+    <div class="footer-brand-col">
+      <img class="footer-logo"
+           src="https://xtremez.store/storage/settings/lRdScHtG4luBZz04wzAWdHmEixeU4vBpJ6E4TK5g.png"
+           alt="Xtremez"
+           onerror="this.style.display='none'"/>
+      <p class="footer-desc">Premium corporate gifts with fast delivery and trusted support.</p>
+    </div>
+    <!-- Shop -->
+    <div>
+      <div class="footer-col-heading">Shop</div>
+      <ul class="footer-links-list">
+        <li><a href="#">All Products</a></li>
+        <li><a href="#">Featured</a></li>
+        <li><a href="#">Clearance</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+    <!-- Company -->
+    <div>
+      <div class="footer-col-heading">Company</div>
+      <ul class="footer-links-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">My Account</a></li>
+      </ul>
+    </div>
+    <!-- Policies -->
+    <div>
+      <div class="footer-col-heading">Policies</div>
+      <ul class="footer-links-list">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Shipping Policy</a></li>
+        <li><a href="#">Returns &amp; Refunds</a></li>
+      </ul>
+    </div>
+    <!-- Contact -->
+    <div>
+      <div class="footer-col-heading">Contact Us</div>
+      <p class="footer-contact-text">Do you have any questions and suggestions?<br/>
+        <a href="/cdn-cgi/l/email-protection#81f9f5f3e4ece4fbafe0e5f2c1e6ece0e8edafe2eeec"><span class="__cf_email__" data-cfemail="c9b1bdbbaca4acb3e7a8adba89aea4a8a0a5e7aaa6a4">[email&#160;protected]</span></a>
+      </p>
+      <p class="footer-contact-text">Do you need support? Give us a call.<br/>
+        <a href="tel:+97152262 1345">+971 52 262 1345</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      COPYRIGHT 2026 - XTREMEZ | ALL RIGHTS RESERVED &nbsp;·&nbsp;
+      <a href="#">Sitemap</a> &nbsp;·&nbsp; <a href="#">Careers</a>
+    </div>
+    <div class="footer-payments">
+      <img src="https://img.icons8.com/color/48/visa.png" alt="Visa"/>
+      <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard"/>
+      <img src="https://img.icons8.com/color/48/amex.png" alt="Amex"/>
+      <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal"/>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════
+     WHATSAPP FIXED BUTTON
+════════════════════════════════════════ -->
+<a href="https://wa.me/971522621345" class="whatsapp-btn" target="_blank">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  Need help? Chat with us
+</a>
